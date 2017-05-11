@@ -20,7 +20,7 @@ Product.propTypes = {
   hasWatermark: React.PropTypes.bool,
   color: React.PropTypes.oneOf(['white', 'eggshell-white', 'salmon']).isRequired,
   weight: function(props, propName) {
-    if ( !props[propName] || typeof props[propName] !== 'number' ||props[propName] <= 80 || props[propName] >= 300 ){
+    if ( !props[propName] || typeof props[propName] !== 'number' || props[propName] <= 80 || props[propName] >= 300 ){
       console.error()
       // return new Error('Nope' )
     }
